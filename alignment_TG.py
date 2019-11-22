@@ -24,7 +24,7 @@ def get_children(id,DB,type):
 
 
 
-def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,FeatureDB_S,count):
+def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,FeatureDB_S,count,length_S):
 
     print(len(f_arrary))
     if len(f_arrary) == 1:
@@ -53,10 +53,10 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
         else:
 
             if len(list(children_T)) > len(list(children_S)):
-                window = upper_boundary - low_boundary + 200
-                t_length = FeatureDB_S[name_S].end - FeatureDB_S[name_S].start
+                window = upper_boundary - low_boundary + 50
+
                 # if the number of exons in the match windows equals to the target exons
-                if t_length < window:
+                if length_S <= window:
                     print(f_arrary[0].id)
 
                     return 'unique_transcript', 'source_contained', f_arrary[0].id
@@ -79,15 +79,16 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
                     return '','',''
     else:
         gf_set = []
-        window = upper_boundary- low_boundary
-        t_length = FeatureDB_S[name_S].end -  FeatureDB_S[name_S].start
+        window = upper_boundary - low_boundary +30
 
-        if count == 0 and window >= t_length * 0.26:
+        if count == 0 and window >= length_S * 0.23:
             for f in f_arrary:
                 for gene in FeatureDB_T.parents(f.id,featuretype='gene'):
                     gf_set.append(gene.id)
 
-            return 'gene_fusion','new_exons',';'.join(gf_set)
+            target_genes = ';'.join(gf_set)
+            print(target_genes)
+            return 'gene_fusion','new_exons',target_genes
         else:
             return 'absent_transcript', 'new_exons', ''
 
@@ -250,7 +251,7 @@ def Alignment_TG(FeatureDB_S, FeatureDB_T,SourceS,SourceT,write_file,m_file = No
                     region = (seqid,start,end)
                     interv_features= list(FeatureDB_T.region(region,featuretype='mRNA'))
                     if len(interv_features) != 0:
-                        call, category,target_t = check_features(trans_id,interv_features,start,end,FeatureDB_T,FeatureDB_S,count)
+                        call, category,target_t = check_features(trans_id,interv_features,start,end,FeatureDB_T,FeatureDB_S,count,len(trans_seq))
                     else:
                         if count == 0:
                             gene_features = list(FeatureDB_T.region(region, featuretype='gene'))
