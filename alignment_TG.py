@@ -123,7 +123,7 @@ def check_absent(exon_arrary,low_boundary, upper_boundary,target_gene):
             return 'absent_transcript', '', target_gene
 
 
-def generate_output(matches,A_feature,gene,sourceA,sourceB,DB_T,file):
+def generate_output(matches,source_id,gene,sourceA,sourceB,DB_T,file):
     u_count = 0
     g_count = 0
     g_info = None
@@ -149,7 +149,7 @@ def generate_output(matches,A_feature,gene,sourceA,sourceB,DB_T,file):
         if g_count > 0:
             # write gene_fusion
             output = '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(sourceA, sourceB,
-                                                                   A_feature.id,
+                                                                   source_id,
                                                                    '', 'gene_fusion', 0,
                                                                    gene[0].id, g_info[2], g_info[1])
             file.write(output)
@@ -157,7 +157,7 @@ def generate_output(matches,A_feature,gene,sourceA,sourceB,DB_T,file):
         if abt:
 
             output = '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(sourceA, sourceB,
-                                                                   A_feature.id,
+                                                                   source_id,
                                                                    '', 'absent_transcript', 0,
                                                                    gene[0].id,abt_info[2] , abt_info[1])
             file.write(output)
@@ -165,14 +165,14 @@ def generate_output(matches,A_feature,gene,sourceA,sourceB,DB_T,file):
         if abg:
 
             output = '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(sourceA, sourceB,
-                                                                   A_feature.id,
+                                                                   source_id,
                                                                    '', 'absent_gene', 0,
                                                                    gene[0].id, '',abg_info[1])
             file.write(output)
             return
         else:
             output = '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(sourceA, sourceB,
-                                                                   A_feature.id,
+                                                                   source_id,
                                                                    '', 'absent_genome', 0,
                                                                    gene[0].id, '', 'unmapped')
             file.write(output)
@@ -183,7 +183,7 @@ def generate_output(matches,A_feature,gene,sourceA,sourceB,DB_T,file):
             call, category, target_id = u_info[0]
             geneT = list(DB_T.parents(target_id, featuretype='gene'))
             output = '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(sourceA, sourceB,
-                                                                   A_feature.id,
+                                                                   source_id,
                                                                    target_id, 'unique_transcript', 0,
                                                                    gene[0].id, geneT[0].id, category)
             file.write(output)
@@ -200,7 +200,7 @@ def generate_output(matches,A_feature,gene,sourceA,sourceB,DB_T,file):
                 #if len(gene) == 0:
                 #    print('gene_error')
                 output = '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(sourceA, sourceB,
-                                                                       A_feature.id,target_id,
+                                                                       source_id,target_id,
                                                                        'multiple_transcript', 0,
                                                                        gene[0].id,
                                                                        geneT[0].id, '')
@@ -320,10 +320,10 @@ def Alignment_TG(FeatureDB_S, FeatureDB_T,SourceS,SourceT,write_file,m_file = No
                 else:
                     call, category, target_t = 'absent_genome', 'unmmapped', ''
                     match_dict[trans_id].append((call, category, target_t))
-        trans_feature = FeatureDB_S[trans_id]
+        #trans_feature = FeatureDB_S[trans_id]
         gene = list(FeatureDB_S.parents(trans_id,featuretype='gene'))
 
-        generate_output(match_dict[trans_id],trans_feature,gene,SourceS,SourceT,FeatureDB_T,write_file)
+        generate_output(match_dict[trans_id],trans_id,gene,SourceS,SourceT,FeatureDB_T,write_file)
               #else:
                 #    call, category, target_t = 'absent_genome', '', 'unmapped'
         t_filehandle.close()
