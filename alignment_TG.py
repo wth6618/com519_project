@@ -90,13 +90,27 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
 
         if count == 0 and window >= length_S * 0.25:
         #if count == 0:
+            same_gene = True
             for f in f_arrary:
                 for gene in FeatureDB_T.parents(f.id,featuretype='gene'):
-                    gf_set.append(gene.id)
 
-            target_genes = ';'.join(gf_set)
-            print(target_genes)
-            return 'gene_fusion','new_exons',target_genes
+                    if len(gf_set) == 0:
+                        gf_set.append(gene.id)
+                        continue
+
+                    # if empty means no same parent
+                    elif gene.id not in gf_set:
+                        gf_set.append(gene.id)
+                        same_gene = False
+
+            if same_gene:
+                print('same gene')
+                parent = list(FeatureDB_T.parents(f_arrary[0].id, featuretype='gene'))
+                return 'absent_transcript', 'changed_exons', parent[0].id
+            else:
+                target_genes = ';'.join(gf_set)
+                print(target_genes)
+                return 'gene_fusion','new_exons',target_genes
         else:
             parent = list(FeatureDB_T.parents(f_arrary[0].id, featuretype='gene'))
             return 'absent_transcript', '', parent[0].id
@@ -262,7 +276,7 @@ def Alignment_TG(FeatureDB_S, FeatureDB_T,SourceS,SourceT,write_file,m_file = No
                 accuracy = 1.0 - float(hit.NM / length)
                 start, end = hit.r_st - 20, hit.r_en + 20
                 #print(accuracy)
-                if accuracy > 0.90:
+                if accuracy > 0.97:
                     region = (seqid,start,end)
                     interv_features= list(FeatureDB_T.region(region,featuretype='mRNA'))
                     if len(interv_features) != 0:
