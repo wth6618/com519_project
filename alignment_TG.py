@@ -53,7 +53,7 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
         else:
 
             if len(list(children_T)) > len(list(children_S)):
-                window = upper_boundary - low_boundary + 50
+                window = upper_boundary - low_boundary + 0.1* length_S
 
                 # if the number of exons in the match windows equals to the target exons
                 if length_S <= window:
@@ -79,9 +79,9 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
                     return '','',''
     else:
         gf_set = []
-        window = upper_boundary - low_boundary +30
+        window = upper_boundary - low_boundary +60
 
-        if count == 0 and window >= length_S * 0.23:
+        if count == 0 and window >= length_S * 0.25:
             for f in f_arrary:
                 for gene in FeatureDB_T.parents(f.id,featuretype='gene'):
                     gf_set.append(gene.id)
