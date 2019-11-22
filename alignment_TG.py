@@ -81,7 +81,8 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
         gf_set = []
         window = upper_boundary - low_boundary +60
 
-        if count == 0 and window >= length_S * 0.25:
+        if count == 0 and window >= length_S * 0.10:
+        #if count == 0:
             for f in f_arrary:
                 for gene in FeatureDB_T.parents(f.id,featuretype='gene'):
                     gf_set.append(gene.id)
@@ -90,7 +91,7 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
             print(target_genes)
             return 'gene_fusion','new_exons',target_genes
         else:
-            return 'absent_transcript', 'new_exons', ''
+            return '', '', ''
 
 
 
