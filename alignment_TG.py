@@ -276,7 +276,7 @@ def Alignment_TG(FeatureDB_S, FeatureDB_T,SourceS,SourceT,write_file,m_file = No
                 accuracy = 1.0 - float(hit.NM / length)
                 start, end = hit.r_st - 20, hit.r_en + 20
                 #print(accuracy)
-                if accuracy > 0.97:
+                if accuracy > 0.90:
                     region = (seqid,start,end)
                     interv_features= list(FeatureDB_T.region(region,featuretype='mRNA'))
                     if len(interv_features) != 0:
