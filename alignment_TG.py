@@ -129,6 +129,14 @@ def generate_output(matches,source_id,gene,sourceA,sourceB,DB_T,file):
     g_info = None
     u_info = []
     abt, abg,abgenome = False, False,False
+    if len(gene) == 0:
+        print('{} not in database'.format(source_id))
+        output = '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(sourceA, sourceB,
+                                                               source_id,
+                                                               '', 'absent_gene', 0,
+                                                               source_id, '', 'match_not_same_gene')
+        file.write(output)
+        return
     for M in matches:
         if M[0] == 'unique_transcript':
             u_count += 1
@@ -155,7 +163,6 @@ def generate_output(matches,source_id,gene,sourceA,sourceB,DB_T,file):
             file.write(output)
             return
         if abt:
-
             output = '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(sourceA, sourceB,
                                                                    source_id,
                                                                    '', 'absent_transcript', 0,
@@ -179,7 +186,7 @@ def generate_output(matches,source_id,gene,sourceA,sourceB,DB_T,file):
             return
 
     else:
-        if u_count ==1:
+        if u_count == 1:
             call, category, target_id = u_info[0]
             geneT = list(DB_T.parents(target_id, featuretype='gene'))
             output = '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(sourceA, sourceB,
@@ -207,6 +214,7 @@ def generate_output(matches,source_id,gene,sourceA,sourceB,DB_T,file):
 
 
                 file.write(output)
+            return
 
 
 
@@ -322,7 +330,6 @@ def Alignment_TG(FeatureDB_S, FeatureDB_T,SourceS,SourceT,write_file,m_file = No
                     match_dict[trans_id].append((call, category, target_t))
         #trans_feature = FeatureDB_S[trans_id]
         gene = list(FeatureDB_S.parents(trans_id,featuretype='gene'))
-
         generate_output(match_dict[trans_id],trans_id,gene,SourceS,SourceT,FeatureDB_T,write_file)
               #else:
                 #    call, category, target_t = 'absent_genome', '', 'unmapped'
