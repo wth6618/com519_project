@@ -40,7 +40,7 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
                 if count > 0:
                     return '', '', ''
                 else:
-                    parent = list(FeatureDB_T.parents(f_arrary.id, featuretype='gene'))
+                    parent = list(FeatureDB_T.parents(f_arrary[0].id, featuretype='gene'))
                     return 'absent_transcript', 'new_exons', parent[0].id
             else:
                 print(f_arrary[0].id)
