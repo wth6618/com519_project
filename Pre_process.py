@@ -39,7 +39,7 @@ def preprocessing():
                                          "exon": ["ID", "Name"], "CDS": ["ID", "Name"]})
         FeatureDB_B = gffutils.FeatureDB('saved_data/B_GFFDB')
     C_db = Path("saved_data/C_GFFDB")
-    if B_db.is_file():
+    if C_db.is_file():
         FeatureDB_C = gffutils.FeatureDB('saved_data/C_GFFDB')
     else:
         db = gffutils.create_db('Challenge_9934185_C.chromosomes/C.gff3', 'saved_data/C_GFFDB', keep_order=True,
