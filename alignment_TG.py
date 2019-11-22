@@ -53,7 +53,7 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
         else:
 
             if len(list(children_T)) > len(list(children_S)):
-                window = upper_boundary - low_boundary + 0.1* length_S
+                window = upper_boundary - low_boundary + 0.10* length_S
 
                 # if the number of exons in the match windows equals to the target exons
                 if length_S <= window:
@@ -61,8 +61,11 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
 
                     return 'unique_transcript', 'source_contained', f_arrary[0].id
                 else:
-                    parent = list(FeatureDB_T.parents(f_arrary[0].id, featuretype='gene'))
-                    return 'absent_transcript', 'new_exons', parent[0].id
+                    if count > 0:
+                        return '', '', ''
+                    else:
+                        parent = list(FeatureDB_T.parents(f_arrary[0].id, featuretype='gene'))
+                        return 'absent_transcript', '', parent[0].id
 
             else:
                 region = (f_arrary[0].seqid, low_boundary, upper_boundary)
@@ -76,7 +79,11 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
                     print(f_arrary[0].id)
                     return 'unique_transcript', 'target_contained', f_arrary[0].id
                 else:
-                    return '','',''
+                    if count > 0:
+                        return '', '', ''
+                    else:
+                        parent = list(FeatureDB_T.parents(f_arrary[0].id, featuretype='gene'))
+                        return 'absent_transcript', '', parent[0].id
     else:
         gf_set = []
         window = upper_boundary - low_boundary +30
@@ -91,7 +98,8 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
             print(target_genes)
             return 'gene_fusion','new_exons',target_genes
         else:
-            return '', '', ''
+            parent = list(FeatureDB_T.parents(f_arrary[0].id, featuretype='gene'))
+            return 'absent_transcript', '', parent[0].id
 
 
 
@@ -134,9 +142,7 @@ def generate_output(matches,A_feature,gene,sourceA,sourceB,DB_T,file):
         if M[0] == 'absent_gene':
             abg = True
             abg_info = M
-        if M[0] == 'absent_genome':
-            abgenome = True
-            abgenome_info = M
+
 
 
     if u_count == 0:
