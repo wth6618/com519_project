@@ -28,7 +28,9 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
 
     print(len(f_arrary))
     if len(f_arrary) == 1:
+
         if f_arrary[0].start> low_boundary and f_arrary[0].end < upper_boundary:
+
             print(f_arrary[0].id)
             #parent = FeatureDB.parents(f_arrary[0].id,featuretype = 'gene')
             return 'unique_transcript', 'exact_match',f_arrary[0].id
@@ -49,18 +51,38 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
 
         # check exon boundary
         else:
-            if len(list(children_T)) > len(list(children_S)):
-                print(f_arrary[0].id)
 
-                return 'unique_transcript', 'source_contained', f_arrary[0].id
+            if len(list(children_T)) > len(list(children_S)):
+                window = upper_boundary - low_boundary + 200
+                t_length = FeatureDB_S[name_S].end - FeatureDB_S[name_S].start
+                # if the number of exons in the match windows equals to the target exons
+                if t_length < window:
+                    print(f_arrary[0].id)
+
+                    return 'unique_transcript', 'source_contained', f_arrary[0].id
+                else:
+                    parent = list(FeatureDB_T.parents(f_arrary[0].id, featuretype='gene'))
+                    return 'absent_transcript', 'new_exons', parent[0].id
+
             else:
-                return 'unique_transcript', 'target_contained', f_arrary[0].id
+                region = (f_arrary[0].seqid, low_boundary, upper_boundary)
+
+                exon_features = list(FeatureDB_T.region(region, featuretype='exon'))
+
+
+                # if the match window contains the entire source transcript
+                if len(exon_features) == len(children_T):
+
+                    print(f_arrary[0].id)
+                    return 'unique_transcript', 'target_contained', f_arrary[0].id
+                else:
+                    return '','',''
     else:
         gf_set = []
         window = upper_boundary- low_boundary
-        t_length = FeatureDB_S[name_S].end-  FeatureDB_S[name_S].start
+        t_length = FeatureDB_S[name_S].end -  FeatureDB_S[name_S].start
 
-        if count == 0 and window >= t_length * 0.7:
+        if count == 0 and window >= t_length * 0.26:
             for f in f_arrary:
                 for gene in FeatureDB_T.parents(f.id,featuretype='gene'):
                     gf_set.append(gene.id)
@@ -217,14 +239,14 @@ def Alignment_TG(FeatureDB_S, FeatureDB_T,SourceS,SourceT,write_file,m_file = No
         chromo_file = SeqIO.parse(t_filehandle, 'fasta')
         for genome in chromo_file:
             seqid, genome_seq = genome.id, str(genome.seq)
-            print(seqid)
+            #print(seqid)
             aligner = construct_aligner(genome_seq)
             for hit in aligner.map(trans_seq):
                 length = len(trans_seq)
                 accuracy = 1.0 - float(hit.NM / length)
                 start, end = hit.r_st - 20, hit.r_en + 20
                 #print(accuracy)
-                if accuracy > 0.93:
+                if accuracy > 0.90:
                     region = (seqid,start,end)
                     interv_features= list(FeatureDB_T.region(region,featuretype='mRNA'))
                     if len(interv_features) != 0:
