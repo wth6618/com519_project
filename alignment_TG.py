@@ -79,9 +79,9 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
                     return '','',''
     else:
         gf_set = []
-        window = upper_boundary - low_boundary +60
+        window = upper_boundary - low_boundary +30
 
-        if count == 0 and window >= length_S * 0.10:
+        if count == 0 and window >= length_S * 0.20:
         #if count == 0:
             for f in f_arrary:
                 for gene in FeatureDB_T.parents(f.id,featuretype='gene'):
