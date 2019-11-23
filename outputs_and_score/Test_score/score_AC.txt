@@ -1,0 +1,14 @@
+###############################################
+# Results:
+# A to C gene call accuracy:      	 28.24%
+# A to C transcript call accuracy:	 10.17%
+# A to C unique call accuracy:    	 21.21%
+# A to C definitive call accuracy:	-14.69%
+# C to A gene call accuracy:      	 48.00%
+# C to A transcript call accuracy:	 40.00%
+# C to A unique call accuracy:    	 27.78%
+# C to A definitive call accuracy:	 12.00%
+# ---------------------------------------------
+# Final Score:                       	 172.71
+###############################################
+

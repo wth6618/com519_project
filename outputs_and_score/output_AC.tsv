@@ -1,0 +1,497 @@
+#SourceA	SourceB	SourceA_Transcript_ID	SourceB_Transcript_ID	Call	Score	SourceA_Gene	SourceB_Gene	Category
+C	A	transcriptC706		absent_transcript	0	geneC1168	geneA41587	
+C	A	transcriptC1826		absent_transcript	0	geneC2730	geneA3421	changed_exons
+C	A	transcriptC1827		absent_transcript	0	geneC2730	geneA3421	
+C	A	transcriptC1828		absent_transcript	0	geneC2730	geneA3421	
+C	A	transcriptC1829		absent_transcript	0	geneC2730	geneA3421	
+C	A	transcriptC1831		absent_transcript	0	geneC2730	geneA3421	
+C	A	transcriptC2870		absent_transcript	0	geneC38984	geneA8280	
+C	A	transcriptC2871		absent_transcript	0	geneC38984	geneA8280	changed_exons
+C	A	transcriptC2872		absent_transcript	0	geneC38984	geneA8280	
+C	A	transcriptC3373	transcriptA116984	multiple_transcript	0	geneC15527	geneA20282	
+C	A	transcriptC3373	transcriptA19706	multiple_transcript	0	geneC15527	geneA20284	
+C	A	transcriptC3373	transcriptA98955	multiple_transcript	0	geneC15527	geneA20285	
+C	A	transcriptC3373	transcriptA94488	multiple_transcript	0	geneC15527	geneA20283	
+C	A	transcriptC7170		absent_transcript	0	geneC38985	geneA8281	
+C	A	transcriptC7171		absent_transcript	0	geneC38985	geneA8281	changed_exons
+C	A	transcriptC7172		absent_transcript	0	geneC38985	geneA8281	
+C	A	transcriptC7173		absent_transcript	0	geneC38985	geneA8281	
+C	A	transcriptC7174		absent_transcript	0	geneC38985	geneA8281	changed_exons
+C	A	transcriptC7175		absent_transcript	0	geneC38985	geneA8281	
+C	A	transcriptC7176		absent_transcript	0	geneC38985	geneA8281	changed_exons
+C	A	transcriptC8798	transcriptA19706	unique_transcript	0	geneC15529	geneA20284	exact_match
+C	A	transcriptC10632		absent_transcript	0	geneC9826	geneA14325	changed_exons
+C	A	transcriptC11039	transcriptA138030	unique_transcript	0	geneC3827	geneA7023	target_contained
+C	A	transcriptC11596	transcriptA136549	unique_transcript	0	geneC9046	geneA13455	exact_match
+C	A	transcriptC14718		absent_transcript	0	geneC10475	geneA15082	
+C	A	transcriptC15660		absent_transcript	0	geneC29445	geneA35467	
+C	A	transcriptC16130		absent_transcript	0	geneC15528	geneA35066	changed_exons
+C	A	transcriptC16178		absent_transcript	0	geneC24654	geneA35520	
+C	A	transcriptC16236		absent_transcript	0	geneC25479	geneA30972	changed_exons
+C	A	transcriptC18681	transcriptA20237	unique_transcript	0	geneC4108	geneA5016	source_contained
+C	A	transcriptC19062	transcriptA57239	unique_transcript	0	geneC2719	geneA3408	exact_match
+C	A	transcriptC19161		absent_transcript	0	geneC3818	geneA4704	
+C	A	transcriptC19193		absent_transcript	0	geneC37875	geneA7138	changed_exons
+C	A	transcriptC20300		absent_transcript	0	geneC2739	geneA17117	changed_exons
+C	A	transcriptC20301		absent_transcript	0	geneC2739	geneA17117	changed_exons
+C	A	transcriptC20349	transcriptA108979	unique_transcript	0	geneC15537	geneA20291	exact_match
+C	A	transcriptC21273		absent_transcript	0	geneC2172	geneA2792	new_exons
+C	A	transcriptC21538	transcriptA59649	unique_transcript	0	geneC33388	geneA3805	target_contained
+C	A	transcriptC21579		absent_transcript	0	geneC26591	geneA38907	changed_exons
+C	A	transcriptC21580		absent_transcript	0	geneC26591	geneA38907	changed_exons
+C	A	transcriptC21581		absent_transcript	0	geneC26591	geneA38907	
+C	A	transcriptC22199		absent_transcript	0	geneC15541	geneA35386	
+C	A	transcriptC22660	transcriptA72394	unique_transcript	0	geneC2938	geneA3662	exact_match
+C	A	transcriptC23073		absent_transcript	0	geneC988	geneA43674	
+C	A	transcriptC23074		absent_transcript	0	geneC988	geneA43674	
+C	A	transcriptC25905		gene_fusion	0	geneC14	geneA376;geneA377	new_exons
+C	A	transcriptC26283		absent_transcript	0	geneC5524	geneA26197	
+C	A	transcriptC28706	transcriptA84581	unique_transcript	0	geneC12726	geneA13004	source_contained
+C	A	transcriptC29201	transcriptA114158	unique_transcript	0	geneC3307	geneA4128	exact_match
+C	A	transcriptC29697	transcriptA59649	unique_transcript	0	geneC33392	geneA3805	target_contained
+C	A	transcriptC30330		absent_transcript	0	geneC15869	geneA27377	
+C	A	transcriptC30331		absent_transcript	0	geneC15869	geneA27377	
+C	A	transcriptC30332		absent_transcript	0	geneC15869	geneA27377	
+C	A	transcriptC30333		absent_transcript	0	geneC15869	geneA27377	
+C	A	transcriptC30334		absent_transcript	0	geneC15869	geneA27377	
+C	A	transcriptC30335		absent_transcript	0	geneC15869	geneA27377	
+C	A	transcriptC30336		absent_transcript	0	geneC15869	geneA27377	
+C	A	transcriptC30337		absent_transcript	0	geneC15869	geneA27377	
+C	A	transcriptC30556		absent_transcript	0	geneC8283	geneA7034	
+C	A	transcriptC30557		absent_transcript	0	geneC8283	geneA7294	
+C	A	transcriptC30558		absent_transcript	0	geneC8283	geneA7034	
+C	A	transcriptC30726		absent_transcript	0	geneC719	geneA7878	
+C	A	transcriptC33280		absent_transcript	0	geneC10477	geneA15083	
+C	A	transcriptC34019		absent_transcript	0	geneC31580	geneA37836	changed_exons
+C	A	transcriptC34535		absent_transcript	0	geneC29499	geneA9231	
+C	A	transcriptC35261		absent_transcript	0	geneC10352	geneA30905	
+C	A	transcriptC35836		absent_transcript	0	geneC1429	geneA1958	new_exons
+C	A	transcriptC35837		absent_transcript	0	geneC1429	geneA1958	new_exons
+C	A	transcriptC36227	transcriptA116984	unique_transcript	0	geneC15526	geneA20282	source_contained
+C	A	transcriptC36865		absent_transcript	0	geneC11882	geneA16485	
+C	A	transcriptC37400	transcriptA116984	unique_transcript	0	geneC15525	geneA20282	source_contained
+C	A	transcriptC37912		absent_transcript	0	geneC35017	geneA41459	changed_exons
+C	A	transcriptC38889	transcriptA57239	unique_transcript	0	geneC2718	geneA3408	exact_match
+C	A	transcriptC39061		absent_transcript	0	geneC8282	geneA7034	
+C	A	transcriptC39062		absent_transcript	0	geneC8282	geneA7034	
+C	A	transcriptC39063		absent_transcript	0	geneC8282	geneA7034	
+C	A	transcriptC39064		absent_transcript	0	geneC8282	geneA7034	
+C	A	transcriptC40958		absent_transcript	0	geneC2967	geneA38059	
+C	A	transcriptC41140		absent_transcript	0	geneC6957	geneA11166	changed_exons
+C	A	transcriptC41141		absent_transcript	0	geneC6957	geneA11166	
+C	A	transcriptC41142		absent_transcript	0	geneC6957	geneA11166	
+C	A	transcriptC44545	transcriptA79020	unique_transcript	0	geneC15524	geneA20281	all_jxn_match
+C	A	transcriptC45981		absent_transcript	0	geneC12674	geneA17350	
+C	A	transcriptC45982		absent_transcript	0	geneC12674	geneA17350	
+C	A	transcriptC45983		absent_transcript	0	geneC12674	geneA17350	
+C	A	transcriptC46603	transcriptA94488	multiple_transcript	0	geneC15523	geneA20283	
+C	A	transcriptC46603	transcriptA98955	multiple_transcript	0	geneC15523	geneA20285	
+C	A	transcriptC46603	transcriptA116984	multiple_transcript	0	geneC15523	geneA20282	
+C	A	transcriptC46603	transcriptA19706	multiple_transcript	0	geneC15523	geneA20284	
+C	A	transcriptC46603	transcriptA4707	multiple_transcript	0	geneC15523	geneA20287	
+C	A	transcriptC47473		absent_transcript	0	geneC1390	geneA43359	
+C	A	transcriptC47474		absent_transcript	0	geneC1390	geneA43359	
+C	A	transcriptC47475		absent_transcript	0	geneC1390	geneA43359	
+C	A	transcriptC47826	transcriptA79020	unique_transcript	0	geneC15520	geneA20281	exact_match
+C	A	transcriptC48228	transcriptA98955	unique_transcript	0	geneC15530	geneA20285	exact_match
+C	A	transcriptC48532		absent_transcript	0	geneC10000	geneA36226	
+C	A	transcriptC49085		absent_transcript	0	geneC8126	geneA8445	changed_exons
+C	A	transcriptC49395	transcriptA33845	unique_transcript	0	geneC15532	geneA20286	all_jxn_match
+C	A	transcriptC49476		absent_gene	0	geneC35637		match_not_same_gene
+C	A	transcriptC49744		absent_transcript	0	geneC20561	geneA25622	
+C	A	transcriptC51017	transcriptA75310	unique_transcript	0	geneC1394	geneA10139	target_contained
+C	A	transcriptC51020		absent_transcript	0	geneC10293	geneA9836	
+C	A	transcriptC51022		absent_transcript	0	geneC10293	geneA9836	
+C	A	transcriptC51023		absent_transcript	0	geneC10293	geneA9836	
+A	C	transcriptA58	transcriptC30338	unique_transcript	0	geneA8281	geneC16713	all_jxn_match
+A	C	transcriptA119		absent_transcript	0	geneA16485	geneC38905	
+A	C	transcriptA2076	transcriptC27124	multiple_transcript	0	geneA39888	geneC6998	
+A	C	transcriptA2076	transcriptC8039	multiple_transcript	0	geneA39888	geneC6481	
+A	C	transcriptA3345		absent_transcript	0	geneA16485	geneC36930	
+A	C	transcriptA3945		absent_transcript	0	geneA35467	geneC29445	
+A	C	transcriptA5343		absent_gene	0	geneA35521		match_not_same_gene
+A	C	transcriptA5396		absent_transcript	0	geneA32231	geneC32616	changed_exons
+A	C	transcriptA5802	transcriptC16703	unique_transcript	0	geneA20297	geneC31655	all_jxn_match
+A	C	transcriptA5900		absent_gene	0	transcriptA5900		match_not_same_gene
+A	C	transcriptA5975	transcriptC2268	unique_transcript	0	geneA30972	geneC158	exact_match
+A	C	transcriptA7049		absent_transcript	0	geneA12428	geneC39149	
+A	C	transcriptA7588	transcriptC7296	multiple_transcript	0	geneA14875	geneC2339	
+A	C	transcriptA7588	transcriptC41600	multiple_transcript	0	geneA14875	geneC17164	
+A	C	transcriptA7588	transcriptC50888	multiple_transcript	0	geneA14875	geneC27952	
+A	C	transcriptA8097		absent_transcript	0	geneA17350	geneC12674	
+A	C	transcriptA8352	transcriptC7296	unique_transcript	0	geneA14875	geneC2339	target_contained
+A	C	transcriptA8945		absent_transcript	0	geneA39694	geneC33392	
+A	C	transcriptA9398		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA9921	transcriptC30726	multiple_transcript	0	geneA39888	geneC719	
+A	C	transcriptA9921	transcriptC27124	multiple_transcript	0	geneA39888	geneC6998	
+A	C	transcriptA9921	transcriptC27399	multiple_transcript	0	geneA39888	geneC14879	
+A	C	transcriptA9921	transcriptC38614	multiple_transcript	0	geneA39888	geneC27287	
+A	C	transcriptA10127		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA10934		absent_transcript	0	geneA39694	geneC33388	
+A	C	transcriptA11620		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA11760		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA12362		absent_transcript	0	geneA4704	geneC38628	
+A	C	transcriptA12911		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA13117		absent_transcript	0	geneA32231	geneC32616	new_exons
+A	C	transcriptA14089		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA14534		absent_transcript	0	geneA39697	geneC33392	
+A	C	transcriptA14602		absent_transcript	0	geneA35520	geneC33651	
+A	C	transcriptA14826		absent_transcript	0	geneA39697	geneC33388	
+A	C	transcriptA15794		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA15828	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA15961		absent_transcript	0	geneA14953	geneC25419	
+A	C	transcriptA16327		absent_transcript	0	geneA26671	geneC35964	new_exons
+A	C	transcriptA16963		absent_transcript	0	geneA20297	geneC38303	
+A	C	transcriptA17288		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA17316	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA17603	transcriptC27124	unique_transcript	0	geneA39888	geneC6998	exact_match
+A	C	transcriptA18120	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA18169		absent_gene	0	transcriptA18169		match_not_same_gene
+A	C	transcriptA18586		absent_transcript	0	geneA8280	geneC38984	
+A	C	transcriptA19706	transcriptC8798	unique_transcript	0	geneA20284	geneC15529	exact_match
+A	C	transcriptA19780		absent_transcript	0	geneA39694	geneC33388	
+A	C	transcriptA20013	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA20013	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA20013	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA20237		absent_transcript	0	geneA5016	geneC4108	changed_exons
+A	C	transcriptA20740		absent_transcript	0	geneA35520	geneC29499	
+A	C	transcriptA21389		absent_transcript	0	geneA12428	geneC39149	changed_exons
+A	C	transcriptA21662		absent_transcript	0	geneA2792	geneC2172	new_exons
+A	C	transcriptA22072		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA22405		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA22540		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA23854	transcriptC49744	unique_transcript	0	geneA25622	geneC20561	all_jxn_match
+A	C	transcriptA24361		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA24382		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA24994		absent_transcript	0	geneA15082	geneC10475	
+A	C	transcriptA25520		absent_transcript	0	geneA14952	geneC25419	
+A	C	transcriptA26197		absent_transcript	0	geneA35520	geneC29499	
+A	C	transcriptA26523		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA27497		absent_transcript	0	geneA17350	geneC12674	
+A	C	transcriptA28132		absent_transcript	0	geneA41459	geneC35016	
+A	C	transcriptA28438		absent_transcript	0	geneA12607	geneC8283	changed_exons
+A	C	transcriptA28613		absent_transcript	0	geneA14875	geneC39629	
+A	C	transcriptA29207		absent_transcript	0	geneA25622	geneC20561	
+A	C	transcriptA29625		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA29832		absent_transcript	0	geneA14875	geneC37358	
+A	C	transcriptA30271	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA30563		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA31053	transcriptC48061	multiple_transcript	0	geneA7138	geneC18515	
+A	C	transcriptA31053	transcriptC48061	multiple_transcript	0	geneA7138	geneC18515	
+A	C	transcriptA31053	transcriptC19193	multiple_transcript	0	geneA7138	geneC37875	
+A	C	transcriptA31089	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA31735		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA32535		absent_transcript	0	geneA4704	geneC10233	
+A	C	transcriptA33790		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA33845	transcriptC49395	unique_transcript	0	geneA20286	geneC15532	exact_match
+A	C	transcriptA34069		absent_transcript	0	geneA12608	geneC8282	changed_exons
+A	C	transcriptA34887	transcriptC48061	unique_transcript	0	geneA7138	geneC18515	all_jxn_match
+A	C	transcriptA34921		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA35057	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA35057	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA35057	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA35057	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA35057	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA35846		absent_transcript	0	geneA14953	geneC25419	
+A	C	transcriptA36322		absent_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA36533		absent_transcript	0	geneA14565	geneC10000	changed_exons
+A	C	transcriptA36582		absent_transcript	0	geneA17404	geneC32410	changed_exons
+A	C	transcriptA36950		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA37445		absent_transcript	0	geneA20676	geneC15869	
+A	C	transcriptA37949		absent_transcript	0	geneA6621	geneC21146	
+A	C	transcriptA38435		absent_transcript	0	geneA32231	geneC32616	new_exons
+A	C	transcriptA38442		absent_transcript	0	geneA35520	geneC28093	
+A	C	transcriptA38549	transcriptC27124	multiple_transcript	0	geneA39888	geneC6998	
+A	C	transcriptA38549	transcriptC4408	multiple_transcript	0	geneA39888	geneC24259	
+A	C	transcriptA38549	transcriptC35792	multiple_transcript	0	geneA39888	geneC26324	
+A	C	transcriptA39001		absent_transcript	0	geneA39694	geneC33388	
+A	C	transcriptA39750	transcriptC49744	unique_transcript	0	geneA25622	geneC20561	all_jxn_match
+A	C	transcriptA39966		absent_transcript	0	geneA35520	geneC33651	
+A	C	transcriptA40036		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA40327		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA40364		absent_transcript	0	geneA20297	geneC31655	
+A	C	transcriptA41122		absent_gene	0	transcriptA41122		match_not_same_gene
+A	C	transcriptA41218	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA41525		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA41631		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA41985		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA42989	transcriptC34019	unique_transcript	0	geneA37836	geneC31580	all_jxn_match
+A	C	transcriptA44232		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA44360		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA44626		absent_transcript	0	geneA25622	geneC20561	
+A	C	transcriptA45689		absent_transcript	0	geneA3433	geneC12467	
+A	C	transcriptA46189	transcriptC47186	unique_transcript	0	geneA8281	geneC28031	all_jxn_match
+A	C	transcriptA46429		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA46499	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA46793		absent_transcript	0	geneA7138	geneC37875	
+A	C	transcriptA47734		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA47851		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA48598		absent_transcript	0	geneA8280	geneC38984	
+A	C	transcriptA48858		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA49148	transcriptC19193	unique_transcript	0	geneA7138	geneC37875	all_jxn_match
+A	C	transcriptA49152		absent_transcript	0	geneA12428	geneC39149	
+A	C	transcriptA50430		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA50713	transcriptC20936	multiple_transcript	0	geneA16485	geneC33534	
+A	C	transcriptA50713	transcriptC6078	multiple_transcript	0	geneA16485	geneC36653	
+A	C	transcriptA50988	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA50988	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA50988	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA52465		absent_transcript	0	geneA14953	geneC25419	
+A	C	transcriptA52472		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA52495		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA52839		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA53316		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA53566		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA53955	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA54198		absent_transcript	0	geneA35520	geneC39236	
+A	C	transcriptA54249	transcriptC19161	multiple_transcript	0	geneA4704	geneC3818	
+A	C	transcriptA54249	transcriptC876	multiple_transcript	0	geneA4704	geneC9823	
+A	C	transcriptA55666		absent_transcript	0	geneA32231	geneC32616	changed_exons
+A	C	transcriptA55881		absent_transcript	0	geneA17350	geneC12674	
+A	C	transcriptA56598		absent_transcript	0	geneA39694	geneC33388	
+A	C	transcriptA57239	transcriptC38889	multiple_transcript	0	geneA3408	geneC2718	
+A	C	transcriptA57239	transcriptC19062	multiple_transcript	0	geneA3408	geneC2719	
+A	C	transcriptA57241	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA57310		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA57835		gene_fusion	0	geneA376	geneC14;geneC15	new_exons
+A	C	transcriptA58028		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA58269		absent_transcript	0	geneA8280	geneC38984	
+A	C	transcriptA58981		absent_transcript	0	geneA20297	geneC38303	
+A	C	transcriptA59113		absent_transcript	0	geneA4713	geneC37770	
+A	C	transcriptA59254	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA59404		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA60435	transcriptC19193	unique_transcript	0	geneA7138	geneC37875	all_jxn_match
+A	C	transcriptA60764		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA62123	transcriptC19161	multiple_transcript	0	geneA4704	geneC3818	
+A	C	transcriptA62123	transcriptC19161	multiple_transcript	0	geneA4704	geneC3818	
+A	C	transcriptA62175		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA62769		absent_transcript	0	geneA8280	geneC38984	
+A	C	transcriptA62780		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA62947	transcriptC30726	multiple_transcript	0	geneA39888	geneC719	
+A	C	transcriptA62947	transcriptC27124	multiple_transcript	0	geneA39888	geneC6998	
+A	C	transcriptA62947	transcriptC27399	multiple_transcript	0	geneA39888	geneC14879	
+A	C	transcriptA62947	transcriptC38614	multiple_transcript	0	geneA39888	geneC27287	
+A	C	transcriptA63360		absent_transcript	0	geneA32231	geneC32616	new_exons
+A	C	transcriptA63653		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA63875	transcriptC36377	unique_transcript	0	geneA12607	geneC14696	all_jxn_match
+A	C	transcriptA64816		absent_transcript	0	geneA12428	geneC39149	
+A	C	transcriptA65374	transcriptC7496	unique_transcript	0	geneA35520	geneC14580	all_jxn_match
+A	C	transcriptA65815		absent_transcript	0	geneA35520	geneC39236	
+A	C	transcriptA66850	transcriptC34019	unique_transcript	0	geneA37836	geneC31580	all_jxn_match
+A	C	transcriptA67072		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA67209	transcriptC27124	multiple_transcript	0	geneA39888	geneC6998	
+A	C	transcriptA67209	transcriptC6943	multiple_transcript	0	geneA39888	geneC13272	
+A	C	transcriptA67209	transcriptC35792	multiple_transcript	0	geneA39888	geneC26324	
+A	C	transcriptA67216		absent_transcript	0	geneA39694	geneC33392	
+A	C	transcriptA67267	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA67336	transcriptC19494	unique_transcript	0	geneA35520	geneC5410	all_jxn_match
+A	C	transcriptA67550		absent_transcript	0	geneA11166	geneC6957	
+A	C	transcriptA67772		absent_transcript	0	geneA39697	geneC33388	
+A	C	transcriptA67902		absent_transcript	0	geneA14325	geneC9826	changed_exons
+A	C	transcriptA68208	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA68263		absent_transcript	0	geneA39694	geneC33392	
+A	C	transcriptA68356		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA68552		absent_transcript	0	geneA17350	geneC12674	
+A	C	transcriptA68878		absent_transcript	0	geneA39694	geneC32586	
+A	C	transcriptA69260		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA69621		absent_transcript	0	geneA6621	geneC21146	
+A	C	transcriptA69627		absent_transcript	0	geneA42124	geneC35637	
+A	C	transcriptA71169		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA71799		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA72232		absent_transcript	0	geneA1479	geneC37128	
+A	C	transcriptA72394	transcriptC30085	unique_transcript	0	geneA3662	geneC20483	all_jxn_match
+A	C	transcriptA72754		absent_transcript	0	geneA35520	geneC29499	
+A	C	transcriptA73225		absent_transcript	0	geneA1910	geneC36825	
+A	C	transcriptA74008		absent_transcript	0	geneA14875	geneC37358	
+A	C	transcriptA74085		absent_transcript	0	geneA14952	geneC25419	
+A	C	transcriptA74094		absent_transcript	0	geneA20297	geneC38303	
+A	C	transcriptA74121	transcriptC7296	unique_transcript	0	geneA14875	geneC2339	target_contained
+A	C	transcriptA75102		absent_transcript	0	geneA35520	geneC33651	
+A	C	transcriptA76633		absent_transcript	0	geneA39694	geneC33392	new_exons
+A	C	transcriptA78507	transcriptC14364	multiple_transcript	0	geneA14875	geneC24161	
+A	C	transcriptA78507	transcriptC14364	multiple_transcript	0	geneA14875	geneC24161	
+A	C	transcriptA78532		absent_transcript	0	geneA39694	geneC33392	
+A	C	transcriptA79020	transcriptC47826	unique_transcript	0	geneA20281	geneC15520	exact_match
+A	C	transcriptA79044	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA79305	transcriptC27124	multiple_transcript	0	geneA39888	geneC6998	
+A	C	transcriptA79305	transcriptC27399	multiple_transcript	0	geneA39888	geneC14879	
+A	C	transcriptA79305	transcriptC38614	multiple_transcript	0	geneA39888	geneC27287	
+A	C	transcriptA79549		absent_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA80104	transcriptC49744	unique_transcript	0	geneA25622	geneC20561	all_jxn_match
+A	C	transcriptA80210	transcriptC19161	unique_transcript	0	geneA4704	geneC3818	all_jxn_match
+A	C	transcriptA80231	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA80894		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA81709		absent_transcript	0	geneA7138	geneC37875	
+A	C	transcriptA82794	transcriptC47186	unique_transcript	0	geneA8281	geneC28031	all_jxn_match
+A	C	transcriptA82817	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA84748		absent_transcript	0	geneA35520	geneC39236	
+A	C	transcriptA84958		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA85630	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA86416		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA86515	transcriptC7296	unique_transcript	0	geneA14875	geneC2339	target_contained
+A	C	transcriptA86776		absent_transcript	0	geneA12428	geneC39149	
+A	C	transcriptA87244		absent_transcript	0	geneA20676	geneC37998	
+A	C	transcriptA87993		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA88332	transcriptC16703	unique_transcript	0	geneA20297	geneC31655	all_jxn_match
+A	C	transcriptA89058		absent_genome	0	geneA14837		unmapped
+A	C	transcriptA89156		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA89267		absent_genome	0	geneA25622		unmapped
+A	C	transcriptA89268	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA89414		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA89692		absent_gene	0	transcriptA89692		match_not_same_gene
+A	C	transcriptA89847		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA91395		absent_transcript	0	geneA12428	geneC39149	
+A	C	transcriptA91831	transcriptC41260	unique_transcript	0	geneA14875	geneC23099	all_jxn_match
+A	C	transcriptA91987	transcriptC19193	unique_transcript	0	geneA7138	geneC37875	all_jxn_match
+A	C	transcriptA92590		absent_transcript	0	geneA8280	geneC38984	
+A	C	transcriptA92985		absent_transcript	0	geneA20676	geneC15869	
+A	C	transcriptA93282	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA93467		absent_transcript	0	geneA16485	geneC36930	
+A	C	transcriptA93491		absent_transcript	0	geneA35520	geneC33651	
+A	C	transcriptA94296		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA94488	transcriptC3373	multiple_transcript	0	geneA20283	geneC15527	
+A	C	transcriptA94488	transcriptC37400	multiple_transcript	0	geneA20283	geneC15525	
+A	C	transcriptA94721	transcriptC29697	unique_transcript	0	geneA39697	geneC33392	all_jxn_match
+A	C	transcriptA95178		absent_transcript	0	geneA17350	geneC12674	
+A	C	transcriptA95239	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA95239	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA95239	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA95239	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA95366	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA95402		absent_gene	0	transcriptA95402		match_not_same_gene
+A	C	transcriptA95776		absent_transcript	0	geneA255	geneC39903	
+A	C	transcriptA96038		absent_transcript	0	geneA32231	geneC32616	changed_exons
+A	C	transcriptA96535	transcriptC48061	multiple_transcript	0	geneA7138	geneC18515	
+A	C	transcriptA96535	transcriptC19193	multiple_transcript	0	geneA7138	geneC37875	
+A	C	transcriptA96874		absent_transcript	0	geneA35520	geneC38377	
+A	C	transcriptA98528		absent_transcript	0	geneA17350	geneC12674	
+A	C	transcriptA98955	transcriptC48228	unique_transcript	0	geneA20285	geneC15530	exact_match
+A	C	transcriptA99865	transcriptC7296	unique_transcript	0	geneA14875	geneC2339	target_contained
+A	C	transcriptA99934		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA100034		absent_transcript	0	geneA39694	geneC33388	
+A	C	transcriptA100337		absent_transcript	0	geneA42124	geneC14131	
+A	C	transcriptA100848		absent_transcript	0	geneA32231	geneC32616	
+A	C	transcriptA100998		absent_transcript	0	geneA8280	geneC38984	
+A	C	transcriptA101790		absent_transcript	0	geneA6621	geneC21146	
+A	C	transcriptA102626		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA102741	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA102885		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA103216		absent_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA105112		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA105958	transcriptC30338	unique_transcript	0	geneA8281	geneC16713	all_jxn_match
+A	C	transcriptA106496		absent_transcript	0	geneA14875	geneC37358	
+A	C	transcriptA106549	transcriptC27124	unique_transcript	0	geneA39888	geneC6998	exact_match
+A	C	transcriptA106588		absent_transcript	0	geneA8280	geneC38984	
+A	C	transcriptA106732		absent_transcript	0	geneA12428	geneC8126	
+A	C	transcriptA107322		absent_transcript	0	geneA14875	geneC36346	changed_exons
+A	C	transcriptA107386		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA107468		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA107513		absent_transcript	0	geneA39695	geneC33388	changed_exons
+A	C	transcriptA107885		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA108164	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA108175		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA108474		absent_gene	0	transcriptA108474		match_not_same_gene
+A	C	transcriptA108979	transcriptC20349	unique_transcript	0	geneA20291	geneC15537	exact_match
+A	C	transcriptA109051		absent_transcript	0	geneA12428	geneC39149	
+A	C	transcriptA110365	transcriptC49744	multiple_transcript	0	geneA25622	geneC20561	
+A	C	transcriptA110365	transcriptC49744	multiple_transcript	0	geneA25622	geneC20561	
+A	C	transcriptA110418		absent_gene	0	transcriptA110418		match_not_same_gene
+A	C	transcriptA110427	transcriptC30726	multiple_transcript	0	geneA39888	geneC719	
+A	C	transcriptA110427	transcriptC27124	multiple_transcript	0	geneA39888	geneC6998	
+A	C	transcriptA110427	transcriptC27399	multiple_transcript	0	geneA39888	geneC14879	
+A	C	transcriptA110427	transcriptC38614	multiple_transcript	0	geneA39888	geneC27287	
+A	C	transcriptA110823		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA110909		absent_transcript	0	geneA39694	geneC33388	
+A	C	transcriptA110920		absent_transcript	0	geneA39694	geneC33392	
+A	C	transcriptA111108		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA111724		absent_transcript	0	geneA26673	geneC35964	new_exons
+A	C	transcriptA111864	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA111868	transcriptC30726	multiple_transcript	0	geneA39888	geneC719	
+A	C	transcriptA111868	transcriptC27124	multiple_transcript	0	geneA39888	geneC6998	
+A	C	transcriptA112148		absent_transcript	0	geneA12607	geneC37781	
+A	C	transcriptA112175	transcriptC27124	multiple_transcript	0	geneA39888	geneC6998	
+A	C	transcriptA112175	transcriptC35792	multiple_transcript	0	geneA39888	geneC26324	
+A	C	transcriptA112218		absent_transcript	0	geneA35520	geneC28093	
+A	C	transcriptA112362		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA112888		absent_transcript	0	geneA12607	geneC37781	
+A	C	transcriptA112904	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA112904	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA112904	transcriptC36865	multiple_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA114041		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA114158	transcriptC29201	unique_transcript	0	geneA4128	geneC3307	exact_match
+A	C	transcriptA114627		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA114634		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA114684		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA115025		absent_transcript	0	geneA41459	geneC35016	
+A	C	transcriptA115552		absent_transcript	0	geneA16485	geneC11882	
+A	C	transcriptA115649		absent_transcript	0	geneA39694	geneC33388	
+A	C	transcriptA116205		absent_transcript	0	geneA1958	geneC1429	
+A	C	transcriptA116852	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA116984		gene_fusion	0	geneA20282	geneC15525;geneC15526	new_exons
+A	C	transcriptA117476		absent_transcript	0	geneA8280	geneC38984	
+A	C	transcriptA117744		absent_transcript	0	geneA42124	geneC14131	new_exons
+A	C	transcriptA119635		absent_transcript	0	geneA39694	geneC33392	
+A	C	transcriptA119652	transcriptC31176	unique_transcript	0	geneA35520	geneC38652	all_jxn_match
+A	C	transcriptA119851	transcriptC15660	multiple_transcript	0	geneA35467	geneC29445	
+A	C	transcriptA119851	transcriptC15660	multiple_transcript	0	geneA35467	geneC29445	
+A	C	transcriptA120346	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA120440		absent_transcript	0	geneA4704	geneC38628	
+A	C	transcriptA120455		absent_transcript	0	geneA14875	geneC37358	
+A	C	transcriptA120576		absent_transcript	0	geneA14952	geneC25419	
+A	C	transcriptA120829		absent_transcript	0	geneA12608	geneC37781	
+A	C	transcriptA121886		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA122304		absent_transcript	0	geneA32231	geneC32616	
+A	C	transcriptA122777		absent_transcript	0	geneA255	geneC39903	
+A	C	transcriptA122867		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA123271		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA123352	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA123628		absent_transcript	0	geneA8280	geneC38984	
+A	C	transcriptA123674	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA124611	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA124796	transcriptC49744	unique_transcript	0	geneA25622	geneC20561	all_jxn_match
+A	C	transcriptA125712	transcriptC7296	unique_transcript	0	geneA14875	geneC2339	target_contained
+A	C	transcriptA125721		absent_transcript	0	geneA14599	geneC10023	
+A	C	transcriptA125763	transcriptC29697	unique_transcript	0	geneA39697	geneC33392	all_jxn_match
+A	C	transcriptA125958	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA126200	transcriptC7296	unique_transcript	0	geneA14875	geneC2339	target_contained
+A	C	transcriptA126693		absent_transcript	0	geneA39694	geneC33388	
+A	C	transcriptA126892		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA127101		absent_transcript	0	geneA4704	geneC3818	
+A	C	transcriptA127232		absent_transcript	0	geneA20297	geneC38303	
+A	C	transcriptA127272		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA128220	transcriptC3125	multiple_transcript	0	geneA1914	geneC28346	
+A	C	transcriptA128220	transcriptC7625	multiple_transcript	0	geneA1914	geneC28029	
+A	C	transcriptA128670		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA129358	transcriptC36865	unique_transcript	0	geneA16485	geneC11882	source_contained
+A	C	transcriptA129392		absent_transcript	0	geneA4713	geneC37770	
+A	C	transcriptA129999		absent_transcript	0	geneA39697	geneC33388	
+A	C	transcriptA130471		absent_gene	0	transcriptA130471		match_not_same_gene
+A	C	transcriptA130496	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA130544		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA130699	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA130828		absent_transcript	0	geneA26673	geneC35964	new_exons
+A	C	transcriptA130975		absent_transcript	0	geneA20676	geneC31583	
+A	C	transcriptA131288		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA131496		absent_transcript	0	geneA39694	geneC33388	
+A	C	transcriptA132057	transcriptC25411	unique_transcript	0	geneA6621	geneC18903	target_contained
+A	C	transcriptA132713		absent_transcript	0	geneA4704	geneC10233	
+A	C	transcriptA132727		absent_gene	0	transcriptA132727		match_not_same_gene
+A	C	transcriptA133145		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA134136		absent_transcript	0	geneA3421	geneC2730	
+A	C	transcriptA134280		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA134782		absent_transcript	0	geneA3433	geneC12467	changed_exons
+A	C	transcriptA134800	transcriptC7296	unique_transcript	0	geneA14875	geneC2339	target_contained
+A	C	transcriptA135746	transcriptC7296	unique_transcript	0	geneA14875	geneC2339	target_contained
+A	C	transcriptA136055		absent_transcript	0	geneA14952	geneC25419	
+A	C	transcriptA136206		absent_transcript	0	geneA14875	geneC37358	
+A	C	transcriptA136502		absent_transcript	0	geneA15083	geneC10477	
+A	C	transcriptA136549	transcriptC11596	unique_transcript	0	geneA13455	geneC9046	exact_match
+A	C	transcriptA136976		absent_transcript	0	geneA1910	geneC36825	
+A	C	transcriptA137263	transcriptC47186	unique_transcript	0	geneA8281	geneC28031	all_jxn_match
+A	C	transcriptA137299		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA137391	transcriptC49486	multiple_transcript	0	geneA1958	geneC31491	
+A	C	transcriptA137391	transcriptC39301	multiple_transcript	0	geneA1958	geneC39282	
+A	C	transcriptA138646		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA139610	transcriptC7296	unique_transcript	0	geneA14875	geneC2339	target_contained
+A	C	transcriptA139819		absent_transcript	0	geneA35520	geneC38652	
+A	C	transcriptA140029		absent_transcript	0	geneA35467	geneC29445	

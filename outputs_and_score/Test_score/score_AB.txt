@@ -1,0 +1,14 @@
+###############################################
+# Results:
+# A to B gene call accuracy:      	 29.85%
+# A to B transcript call accuracy:	 6.00%
+# A to B unique call accuracy:    	 23.53%
+# A to B definitive call accuracy:	-26.00%
+# B to A gene call accuracy:      	 43.94%
+# B to A transcript call accuracy:	 19.70%
+# B to A unique call accuracy:    	 35.71%
+# B to A definitive call accuracy:	-6.06%
+# ---------------------------------------------
+# Final Score:                       	 126.67
+###############################################
+
