@@ -11,6 +11,10 @@ import distance
 
 
 output_dict = dict()
+"""
+Inputs: reference sequence
+Outputs: Aligner
+"""
 def construct_aligner(input_seq):
     a = mp.Aligner(seq=input_seq, preset='map-ont')
     # a = mp.Aligner("tryB_transcripts.fasta",preset='map-ont')  # load or build index
@@ -23,7 +27,15 @@ def get_children(id,DB,type):
     return DB.children(id, featuretype=type)
 
 
+"""
+Inputs: source database; target database; matching window, transcripts within the window
+Output: classified calls and category
 
+Candidates with accuracy above the first threshold will be considered as potential 
+unique_transcript matches. 
+ In the mRNA-level, check the number of transcript and marginal position in the matching window 
+ In the exon-level, check the number of exons and the marginal position of the first and last exon.
+"""
 def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,FeatureDB_S,count,length_S):
 
     print(len(f_arrary))
@@ -116,8 +128,14 @@ def check_features(name_S,f_arrary,low_boundary, upper_boundary,FeatureDB_T,Feat
             return 'absent_transcript', '', parent[0].id
 
 
+"""
+Inputs:
+all the exons within the matching window;matching window boundaries; 
 
+Output:
+return the type of absent and corresponding catergory 
 
+"""
 def check_absent(exon_arrary,low_boundary, upper_boundary,target_gene):
 
     print('check_absent')
@@ -136,7 +154,16 @@ def check_absent(exon_arrary,low_boundary, upper_boundary,target_gene):
         else:
             return 'absent_transcript', '', target_gene
 
+"""
+Inputs: Match information; database; the output file handle
+Output: None
 
+base on the match information and write result to the output file.
+the calls are written with priority: 
+unique_transcript > multiple_transcript>gene_fusion>absent_transcript
+> absent_gene > absent_genome
+
+"""
 def generate_output(matches,source_id,gene,sourceA,sourceB,DB_T,file):
     u_count = 0
     g_count = 0
@@ -232,8 +259,10 @@ def generate_output(matches,source_id,gene,sourceA,sourceB,DB_T,file):
 
 
 
-
-
+"""
+Input: actual sequence of the gene in the matching window
+Output: boolean whether it can be classified as antisense or not
+"""
 def check_antisense(gene,trans,start):
 
     print('antisense')
@@ -246,10 +275,15 @@ def check_antisense(gene,trans,start):
         return False
 
 
-
-
 # source B target A
+"""
+Inputs: source transcripts; target genome; output file handle; source/target database
 
+output: None
+
+Align every source transcript to the target genome and calculate accuracy from each hit;
+use two accuracy thresholds to distinguish hit/match for further classification
+"""
 def Alignment_TG(FeatureDB_S, FeatureDB_T,SourceS,SourceT,write_file,m_file = None, source_file = None,target_file = None):
 
     #match_dict = np.load(m_file,allow_pickle=True).item()
@@ -326,13 +360,7 @@ def Alignment_TG(FeatureDB_S, FeatureDB_T,SourceS,SourceT,write_file,m_file = No
 
                                 call, category, target_t = 'absent_gene', 'match_not_same_gene', ''
                             else:
-                                '''gene = gene_features[0]
-                                gen_seq = gene.sequence(target_file, use_strand=True)
-                                if check_antisense(gen_seq,trans_seq,start-gene.start):
 
-                                    call, category, target_t = 'absent_gene', 'antisense', ''
-                                else:
-                                    call, category, target_t = 'absent_transcript', '', '''''
                                 call, category, target_t = 'absent_transcript', '', ''
                     else:
                         call, category, target_t = '', '', ''
@@ -342,23 +370,21 @@ def Alignment_TG(FeatureDB_S, FeatureDB_T,SourceS,SourceT,write_file,m_file = No
                 else:
                     call, category, target_t = 'absent_genome', 'unmmapped', ''
                     match_dict[trans_id].append((call, category, target_t))
-        #trans_feature = FeatureDB_S[trans_id]
+
         gene = list(FeatureDB_S.parents(trans_id,featuretype='gene'))
         generate_output(match_dict[trans_id],trans_id,gene,SourceS,SourceT,FeatureDB_T,write_file)
-              #else:
-                #    call, category, target_t = 'absent_genome', '', 'unmapped'
+
         t_filehandle.close()
 
 
-
-        # generate result of the current transcript
-        #feature = FeatureDB_S[trans_id]
-        #generate_output(match_dict[trans_id],feature)
     return match_dict
 
 
 
-"""start = timeit.default_timer()
+"""
+Testing Session:
+
+start = timeit.default_timer()
 FeatureDB_A,FeatureDB_B,FeatureDB_C = preprocessing()
 print('finish preprocess')
 file_handle = open('Outputs/output_BA.txt','w+')

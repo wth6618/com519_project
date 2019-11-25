@@ -3,20 +3,10 @@ from pathlib import Path
 from Bio import SeqIO
 import mappy as mp
 
-#db = gffutils.create_db('Challenge_9934185_A.chromosomes/A.gff3', 'saved_data/A_GFFDB', keep_order=True,merge_strategy='merge', sort_attribute_values=True,id_spec={"gene": ["ID","Name"], "mRNA": ["ID", "transcript_id"],"exon":["ID","Name"],"CDS":["ID","Name"]})
-
-#db = gffutils.create_db('Challenge_9934185_A.chromosomes/A.gff3', 'saved_data/A_GFFDB',force=True, keep_order=True,merge_strategy='merge', sort_attribute_values=True)
-#FeatureDB_A = gffutils.FeatureDB('saved_data/A_GFFDB')
-#FeatureDB_B = gffutils.FeatureDB('saved_data/B_GFFDB')
-#Feature_db = gffutils.FeatureDB('saved_data/B_GFFDB')
-#print('db finished')
-#db1 = gffutils.create_db('Challenge_9934185_B.chromosomes/B.gff3', 'saved_data/B_GFFDB', keep_order=True,merge_strategy='merge', sort_attribute_values=True,id_spec={"gene": ["ID","Name"], "mRNA": ["ID", "transcript_id"],"exon":["ID","Name"]})
-#print('db1 finished')
-
-#db2 = gffutils.create_db('Challenge_9934185_C.chromosomes/C.gff3', 'saved_data/C_GFFDB', keep_order=True,merge_strategy='merge', sort_attribute_values=True,id_spec={"gene": ["ID","Name"], "mRNA": ["ID", "transcript_id"],"exon":["ID","Name"],"CDS":["ID","Name"],"intron":["ID","Name"]})
-
-
-#print('db2 finished')
+"""
+inputs: gff3 files from each chromosome folder
+output: relational database of each chromosome
+"""
 def preprocessing():
     A_db = Path("saved_data/A_GFFDB")
     if A_db.is_file():
@@ -50,6 +40,20 @@ def preprocessing():
     return (FeatureDB_A,FeatureDB_B,FeatureDB_C)
 
 
+"""
+Testing session:
+"""
+
+#db = gffutils.create_db('Challenge_9934185_A.chromosomes/A.gff3', 'saved_data/A_GFFDB', keep_order=True,merge_strategy='merge', sort_attribute_values=True,id_spec={"gene": ["ID","Name"], "mRNA": ["ID", "transcript_id"],"exon":["ID","Name"],"CDS":["ID","Name"]})
+
+#db = gffutils.create_db('Challenge_9934185_A.chromosomes/A.gff3', 'saved_data/A_GFFDB',force=True, keep_order=True,merge_strategy='merge', sort_attribute_values=True)
+#FeatureDB_A = gffutils.FeatureDB('saved_data/A_GFFDB')
+#FeatureDB_B = gffutils.FeatureDB('saved_data/B_GFFDB')
+#Feature_db = gffutils.FeatureDB('saved_data/B_GFFDB')
+#print('db finished')
+#db1 = gffutils.create_db('Challenge_9934185_B.chromosomes/B.gff3', 'saved_data/B_GFFDB', keep_order=True,merge_strategy='merge', sort_attribute_values=True,id_spec={"gene": ["ID","Name"], "mRNA": ["ID", "transcript_id"],"exon":["ID","Name"]})
+#print('db1 finished')
+
 '''children = Feature_db.children('geneB2',featuretype=('exon','mRNA'))
 parents = Feature_db.parents('transcriptB5.exon.2',featuretype='gene')
 print(Feature_db['transcriptB5.exon.2'])
@@ -67,19 +71,7 @@ for p in parents:
 for feature in Feature_db.featuretypes():
     print(feature)'''
 
-'''exon = Feature_db['transcriptB5.exon.2']
-#print(Feature_db.schema())
-print(exon.seqid)
-seq = exon.sequence('Challenge_9934185_B.chromosomes/B.chromosomes.fasta')
-print(len(seq))'''
 
-'''FeatureDB_C = gffutils.FeatureDB('saved_data/C_GFFDB')
-start, end = 16324190, 16325199
-seqid = 'chromosomeC1'
-region = (seqid, start, end)
-features = FeatureDB_C.region(region)
-for f in features:
-    print(f)'''
 
 '''featureA = FeatureDB_A['transcriptA80928']
 featureB = FeatureDB_B['transcriptB22040']
