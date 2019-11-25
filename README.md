@@ -2,7 +2,7 @@
 
 __python version3.6__
 ## Before you run:
-Upload the initial chromosome files from the challenge website and __keep the file name as the same__  
+Download the initial chromosome files from the challenge website and __keep the file name as the same__  
 cd minimap2  
 python3 setup.py install
 
