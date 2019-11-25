@@ -1,7 +1,7 @@
 # COMP519
 
 ## Before you run:
-upload the initial chromosome files from the challenge website and __keep the file name as the same__
+Upload the initial chromosome files from the challenge website and __keep the file name as the same__  
 cd minimap2  
 python setup.py install
 
