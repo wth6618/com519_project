@@ -1,15 +1,17 @@
 # COMP519
 
-if the pre-processing is interrupted, then delete A_GFFDB,B_GFFDB,C_GFFDB in the saved_data folder
-and restart again
+## Before you run:
+upload the initial chromosome files from the challenge website and __keep the file name as the same__
+cd minimap2  
+python setup.py install
 
-result will be in Outputs
+## Running the pipeline
+everything is setup  
+python3 PIPELINE.PY  
+preprocess will take about five minutes to create database
 
-And add the original three Challenge_9934185_chromosomes before u run it
+## Folders
+* __Outputs__ folder contains all the results for running the pipeline.
+* __outputs_and_score__ folder contains all the test results.
+* __saved_data__ stores all the result in binary form.
 
-#python PIPELINE.py 
-all you have to do
-
-#welcome to make any changes and update
-
-We also Need someone to look at gffCompare,It would be good if you can make use of it in our pipeline
